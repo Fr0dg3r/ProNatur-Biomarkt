@@ -33,9 +33,7 @@ namespace ProNatur_Biomarkt_GmbH
             this.pbarLoading = new System.Windows.Forms.ProgressBar();
             this.lblLoading = new System.Windows.Forms.Label();
             this.lblProgPercent = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.loadingbarTimer = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pbarLoading
@@ -68,16 +66,6 @@ namespace ProNatur_Biomarkt_GmbH
             this.lblProgPercent.TabIndex = 2;
             this.lblProgPercent.Text = "0%";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ProNatur_Biomarkt_GmbH.Properties.Resources.GroceryImg;
-            this.pictureBox1.InitialImage = global::ProNatur_Biomarkt_GmbH.Properties.Resources.GroceryImg;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(642, 256);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // loadingbarTimer
             // 
             this.loadingbarTimer.Tick += new System.EventHandler(this.loadingbarTimer_Tick);
@@ -89,7 +77,6 @@ namespace ProNatur_Biomarkt_GmbH
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(684, 322);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblProgPercent);
             this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.pbarLoading);
@@ -99,7 +86,6 @@ namespace ProNatur_Biomarkt_GmbH
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProNatur-Biomarkt GmbH";
             this.Load += new System.EventHandler(this.LoadingScreen_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,7 +96,6 @@ namespace ProNatur_Biomarkt_GmbH
         private System.Windows.Forms.ProgressBar pbarLoading;
         private System.Windows.Forms.Label lblLoading;
         private System.Windows.Forms.Label lblProgPercent;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer loadingbarTimer;
     }
 }
